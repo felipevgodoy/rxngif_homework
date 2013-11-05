@@ -1,7 +1,8 @@
-<h1>Picture Details</h1>
+<h1>Picture index</h1>
 
 
  <% @pic.each do |pic| %>
     <p><img width = "200" src = "<%= pic.source %>"></p>
-	<p><%= pic.caption %></p>
+	<p> <%= pic.id %>) <%= pic.caption %></p>
+	<p></p>
   <% end %>
