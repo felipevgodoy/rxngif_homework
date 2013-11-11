@@ -2,7 +2,8 @@
 
 
  <% @pic.each do |pic| %>
-    <p><img width = "200" src = "<%= pic.source %>"></p>
+    <p><img width = "200" src = ""></p>
+    <%= image_tag("#{pic.source}", :width => 200) %>
 	<p> <%= pic.id %>) <%= pic.caption %></p>
 	<p></p>
   <% end %>
