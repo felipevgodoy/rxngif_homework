@@ -5,5 +5,8 @@
     <p><img width = "200" src = ""></p>
     <%= image_tag("#{pic.source}", :width => 200) %>
 	<p> <%= pic.id %>) <%= pic.caption %></p>
+	<%= link_to "Delete", picture_url(pic.id), :method => "delete", :class => "btn btn-primary" %>
+	<%= link_to "Edit", edit_picture_url(pic.id), :method => "get", :class => "btn btn-primary" %>
+	<%= link_to "View", picture_url(pic.id), :method => "get", :class => "btn btn-primary" %>
 	<p></p>
   <% end %>
